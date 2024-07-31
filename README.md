@@ -1,18 +1,46 @@
 # test-app-setup
 # ReadMe file must tell someone else how to run the program
 
+
 # Open terminal from GitHub Desktop
 # pwd
+
+## Setup
+
+Create virtual environment:
+
+# ``` denotes code block
+# sh for starts here
+
+```sh
+conda create -n ump-env python=3.11
+```
+
+Activate the environment:
+
+```sh
+conda activate ump-env
+```
+
+Install packages:
+
+```sh
+#pip install pandas
+#pip install requests
+#pip install plotly
+#pip install python-dotenv
+
+# best practice to list the packages in the requirements.txt file:
+pip install -r requirements.txt
+```
 
 ## Usage
 
 Run the script:
 
 ```sh
-# ``` denotes code block
-# sh for starts here
 python app/unemployment.py
 
-# equivalent:
+# equivalent (we'll need this once we start importing code from one file to another):
 python -m app.unemployment
 ```
